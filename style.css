@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "SourceCode";
+  src: url("/assets/SourceCodePro-Regular.ttf");
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'SourceCode';
+  color: #B9BED5;
+}
+.bg{
+  position: absolute;
+  filter: blur(10%);
+  left: -5px;
+  top: -5px;
+}
+.bg img{
+  height: 105vh;
+  width: 105vw;
+  object-fit: cover;
+  filter: blur(3px);
+}
+.content{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.clock{
+  height: 100px;
+  width: 423px;
+  background-color: rgba(8,9,13,0.44);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  font-weight: 700;
+}
+.flex{
+  display: flex;
+  gap: 20px;
+}
+.content-img{
+  width: 218px;
+  height: 290px;
+  border-radius: 27px;
+  overflow: hidden;
+}
+.content-img img{
+  width: 218px;
+  height: 290px;
+  object-fit: cover;
+}
+.links-box{
+  height: 290px;
+  width: 464px;
+  background-color: rgba(8,9,13,0.44);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+}
+.greeting{
+  margin-top: 25px;
+  margin-left: 25px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.date{
+  margin-top: 10px;
+  margin-left: 25px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.links{
+  display: flex;
+  margin-left: 25px;
+  margin-top: 25px;
+}
+a{
+  font-size: 16px;
+  color: #A1A7BC;
+  text-decoration: none;
+}
+.links-col{
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.col2{
+  margin-left: 159px;
+}
