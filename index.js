@@ -39,18 +39,26 @@ function time() {
   ];
 
   let greetingText = "";
-  if (hours > 5 && hours < 12) {
+  if (hours >= 5 && hours < 12) {
     greetingText = "morning";
-  } else if (hours > 12 && hours < 18) {
+  } else if (hours >= 12 && hours < 18) {
     greetingText = "afternoon";
-  } else if (hours > 18 && hours < 23) {
+  } else if (hours >= 18 && hours < 23) {
     greetingText = "evening";
   } else {
     greetingText = "night";
   }
-  timeElement.innerHTML = time;
-  greetingElement.innerHTML = `Good ${greetingText}, Dartandr`;
-  dateElement.innerHTML = `Today is ${weekDays[weekDay]}, ${months[month]} ${day} ${year}`;
+  const finalGreetText = `Good ${greetingText}, Dartandr`;
+  const finalDateText = `Today is ${weekDays[weekDay]}, ${months[month]} ${day} ${year}`;
+  if (timeElement.innerHTML !== time) {
+    timeElement.innerHTML = time;
+  }
+  if (greetingElement.innerHTML !== finalGreetText) {
+    greetingElement.innerHTML = finalGreetText;
+  }
+  if (dateElement.innerHTML !== finalDateText) {
+    dateElement.innerHTML = finalDateText;
+  }
 }
 time();
 setInterval(time, 1000);
