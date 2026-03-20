@@ -7,7 +7,7 @@ function time() {
   const time = newDate.toLocaleString("en-US", {
     hour: "numeric",
     minute: "numeric",
-    hour12: true,
+    hour12: false,
   });
   const hours = newDate.getHours();
   const day = newDate.getDate();
